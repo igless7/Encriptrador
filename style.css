@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+  --color-blue: #0a3871;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  vertical-align: baseline;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #f3f5fc;
+}
+
+.header {
+  width: 90%;
+  margin: auto;
+}
+
+.header_logo {
+  margin-top: 40px;
+}
+/* main */
+.main {
+  top: 40px;
+  width: 80%;
+  margin: auto 40px auto auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: end;
+  min-height: calc(100vh - 91px - 72px);
+  position: relative;
+}
+
+.texto-normal {
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ingresar-texto {
+  height: 67%;
+  width: 83%;
+  font-size: 32px;
+  color: var(--color-blue);
+  border: none;
+  outline: none;
+  resize: none;
+  background: none;
+}
+
+.ingresar-texto::placeholder {
+  color: var(--color-blue);
+}
+
+.botones-ingresar-texto {
+  display: flex;
+  gap: 24px;
+  margin-top: 16px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.boton-encriptar {
+  width: 267px;
+  height: 52px;
+  padding: 0 24px;
+  border-radius: 24px;
+  background-color: var(--color-blue);
+  color: white;
+  font-size: 16px;
+  text-align: center;
+}
+
+.boton-encriptar:hover {
+  cursor: pointer;
+}
+
+.boton-desencriptar {
+  width: 267px;
+  height: 52px;
+  padding: 0 24px;
+  border-radius: 24px;
+  border: 1px solid var(--color-blue);
+  background-color: #d8dfe8;
+  color: var(--color-blue);
+  font-size: 16px;
+}
+
+.texto-encriptado {
+  background-color: #ffffff;
+  height: calc(100% + 77px);
+  border-radius: 32px;
+  margin-right: 40px;
+  width: 350px;
+  text-align: center;
+  position: relative;
+}
+
+.txt-encriptato-vacio {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-bottom: 35px;
+}
+
+#msn-final {
+  margin: 10px;
+}
+
+strong {
+  font-size: 22px;
+  display: inline-block;
+  word-break: break-word;
+}
+
+.instruccion-txt-vacio {
+  font-size: 16px;
+}
+
+.btn-copiar {
+  text-align: center;
+  width: 257px;
+  height: 45px;
+
+  border-radius: 24px;
+  border: 1px solid var(--color-blue);
+  background-color: #ffffff;
+  color: var(--color-blue);
+  font-size: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* footer */
+footer {
+  background-color: blueviolet;
+  margin-top: 55px;
+  position: relative;
+  padding: 19px;
+  width: 100%;
+  top: 0;
+}
+
+@media screen and (max-width: 770px) {
+  .main {
+    grid-template-columns: 1fr;
+    width: auto;
+    margin: 0 57px;
+  }
+
+  .texto-encriptado {
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .botones-ingresar-texto {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .txt-encriptato-vacio {
+    margin-bottom: 35px;
+  }
+
+  .no-mensaje-img {
+    display: none;
+  }
+
+  footer {
+    margin-top: 55px;
+    position: relative;
+    padding: 19px;
+  }
+}
